@@ -1,0 +1,93 @@
+<!-- filepath: c:\Users\HP\Desktop\alizambruze\alizambruze\coreapp\templates\coreapp\list_view.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+        <title>alizambruz</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="{% static 'coreapp/css/bootstrap.min.css' %}">
+        <!-- style css -->
+        <link rel="stylesheet" href="{% static 'coreapp/css/style.css' %}">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="{% static 'coreapp/css/responsive.css' %}">
+        <!-- fevicon -->
+        <link rel="icon" href="{% static 'coreapp/images/fevicon.png' %}" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="{% static 'coreapp/css/jquery.mCustomScrollbar.min.css' %}">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <style>
+           .sticky-header {
+              position: sticky;
+              top: 0;
+              z-index: 1000;
+              background-color: green;
+              box-shadow: 0 4px 6px rgba(236, 107, 107, 0.1);
+              transition: background-color 0.3s ease;
+           }
+           .section-spacing {
+              margin-bottom: 50px;
+           }
+           .header {
+              background-color:black
+           }
+           .navbar-nav .nav-link:hover {
+              color: #eec237 !important; /* Change hover color to #eec237 */
+           }
+        </style>
+     </head>
+   <body>
+      <div class="container section-spacing">
+         <div class="titlepage text-center">
+            <h2>Our Facilities</h2>
+            <p>Explore our options for rooms, lounge, and auditorium.</p>
+         </div>
+         <div class="row">
+            <!-- Rooms -->
+            <div class="col-md-4">
+               <div class="room-box">
+                  <figure><img src="{% static 'coreapp/images/img1.jpg' %}" alt="Room Option"/></figure>
+                  <h3>Rooms</h3>
+                  <p>Comfortable and luxurious rooms designed for your relaxation.</p>
+                  <a class="read_more" href="#">View Details</a>
+               </div>
+            </div>
+            <!-- Lounge -->
+            <div class="col-md-4">
+               <div class="room-box">
+                  <figure><img src="{% static 'coreapp/images/img2.jpg' %}" alt="Lounge Option"/></figure>
+                  <h3>Lounge</h3>
+                  <p>Spacious lounge areas perfect for socializing and unwinding.</p>
+                  <a class="read_more" href="#">View Details</a>
+               </div>
+            </div>
+            <!-- Auditorium -->
+            <div class="col-md-4">
+               <div class="room-box">
+                  <figure><img src="{% static 'coreapp/images/img3.jpg' %}" alt="Auditorium Option"/></figure>
+                  <h3>Auditorium</h3>
+                  <p>State-of-the-art auditorium for events and conferences.</p>
+                  <a class="read_more" href="#">View Details</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="{% static 'coreapp/js/jquery.min.js' %}"></script>
+      <script src="{% static 'coreapp/js/bootstrap.bundle.min.js' %}"></script>
+   </body>
+</html>
